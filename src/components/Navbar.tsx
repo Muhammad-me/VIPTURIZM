@@ -10,7 +10,6 @@ const languageMap = {
   "ru-RU": { label: "RU", dir: "ltr", active: false },
   "en-EN": { label: "EN", dir: "ltr", active: false },
 };
-const data = [{ label: "UZ" }, { label: "RU" }, { label: "En" }];
 
 export default function Navbar({ open }: { open: any }) {
   const { t } = useTranslation("translation");
@@ -46,23 +45,23 @@ export default function Navbar({ open }: { open: any }) {
             </Menu.Target>
             <Menu.Dropdown>
               <Menu.Item component="a">
-                <li className="text-lg font-medium list-none my-2">
+                <li className="text-2xl font-medium list-none my-2">
                   <a href="#section1">{t("nav_li1")}</a>
                 </li>
-                <li className="text-lg font-medium list-none my-2">
+                <li className="text-2xl font-medium list-none my-2">
                   <a href="#section2">{t("nav_li2")}</a>
                 </li>
-                <li className="text-lg font-medium list-none my-2">
+                <li className="text-2xl font-medium list-none my-2">
                   <a href="#section3">{t("nav_li3")}</a>
                 </li>
-                <li className="text-lg font-medium list-none my-2">
+                <li className="text-2xl font-medium list-none my-2">
                   <a href="#section4">{t("nav_li4")}</a>
                 </li>
               </Menu.Item>
               <Menu.Item component="a">
                 <button
                   onClick={open}
-                  className="text-base lg:text-lg font-semibold 
+                  className="text-2xl lg:text-lg font-semibold 
             py-2 lg:py-3 px-3 lg:px-5 border-none rounded-md bg-[#0e1734] text-white"
                 >
                   {t("nav_btn")}
@@ -79,7 +78,7 @@ export default function Navbar({ open }: { open: any }) {
           >
             {t("nav_btn")}
           </button>
-          <div className={"bg-white text-xl p-3"}>
+          <div className="bg-white text-xl p-3">
             <Menu>
               <Menu.Target>
                 <button>{t("chance")}</button>
@@ -94,13 +93,7 @@ export default function Navbar({ open }: { open: any }) {
                         key={item}
                         onClick={() => i18next.changeLanguage(item)}
                       >
-                        {data.map((el) => {
-                          return (
-                            <>
-                              <h1>{el.label}</h1>
-                            </>
-                          );
-                        })}
+                        {languageMap[item].label}
                       </Menu.Item>
                     </>
                   );
