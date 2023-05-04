@@ -46,6 +46,7 @@ export default function Acc1() {
                 <p className="font-semibold text-lg">{t("tr3_p")}</p>
               </Accordion.Panel>
             </Accordion.Item>
+            what
           </Accordion>
         </div>
       </div>
