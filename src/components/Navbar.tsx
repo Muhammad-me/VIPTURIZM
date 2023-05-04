@@ -89,9 +89,12 @@ export default function Navbar({ open }: { open: any }) {
                     <>
                       <Menu.Item
                         component="button"
-                        className="dropdown-item text-xl cursor-pointer"
+                        className="dropdown-item"
+                        style={{ color: "black" }}
                         key={item}
-                        onClick={() => i18next.changeLanguage(item)}
+                        onClick={() => {
+                          i18next.changeLanguage(item);
+                        }}
                       >
                         {languageMap[item].label}
                       </Menu.Item>
