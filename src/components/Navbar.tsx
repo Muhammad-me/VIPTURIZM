@@ -93,7 +93,7 @@ export default function Navbar({ open }: { open: any }) {
                         key={item}
                         onClick={() => i18next.changeLanguage(item)}
                       >
-                        {languageMap[item].label}
+                        {/* {languageMap[item].label} */}
                       </Menu.Item>
                     </>
                   );
