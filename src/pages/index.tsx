@@ -1,11 +1,16 @@
 import Footer from "@/components/Footer";
 import Main from "@/components/Main";
+import ArrowRight from "@/icon/ArrowRight";
 import { Modal } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function Home() {
   const [opened, { open, close }] = useDisclosure(false);
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <>
@@ -102,6 +107,16 @@ export default function Home() {
         </div>
       </Modal>
       <Main open={open} />
+      <button
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+        className="fixed p-4 rounded-full text-xl bottom-10 right-10 bg-violet-600 -rotate-90 text-white"
+      >
+        <div className="w-6 h-6">
+          <ArrowRight />
+        </div>
+      </button>
       <Footer />
     </>
   );

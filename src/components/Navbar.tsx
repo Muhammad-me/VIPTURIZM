@@ -10,6 +10,7 @@ const languageMap = {
   "ru-RU": { label: "RU", dir: "ltr", active: false },
   "en-EN": { label: "EN", dir: "ltr", active: false },
 };
+const data = [{ label: "UZ" }, { label: "RU" }, { label: "En" }];
 
 export default function Navbar({ open }: { open: any }) {
   const { t } = useTranslation("translation");
@@ -93,7 +94,13 @@ export default function Navbar({ open }: { open: any }) {
                         key={item}
                         onClick={() => i18next.changeLanguage(item)}
                       >
-                        {languageMap[item].label}
+                        {data.map((el) => {
+                          return (
+                            <>
+                              <h1>{el.label}</h1>
+                            </>
+                          );
+                        })}
                       </Menu.Item>
                     </>
                   );
