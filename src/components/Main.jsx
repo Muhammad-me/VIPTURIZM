@@ -24,7 +24,7 @@ export default function Main({ open }) {
         <div className="lg:flex justify-between items-center mt-10 lg:mt-32">
           <div className="lg:w-2/5">
             <h1 className="text-2xl lg:text-5xl font-bold">{t("sec_txt1")}</h1>
-            <p className="text-base lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
+            <p className="text-3xl lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
               {t("sec_p1")}
             </p>
           </div>
@@ -38,7 +38,7 @@ export default function Main({ open }) {
           </div>
           <div className="lg:w-2/5 mt-10 lg:mt-0" id="section1">
             <h2 className="text-2xl lg:text-5xl font-bold">{t("sec_txt2")}</h2>
-            <p className="text-base lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
+            <p className="text-3xl lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
               {t("sec_p2")}
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function Main({ open }) {
         <div className="lg:flex items-center justify-between mt-20 lg:mt-32">
           <div className="lg:w-2/5 mt-10 lg:mt-0">
             <h2 className="text-2xl lg:text-5xl font-bold">{t("sec_txt3")}</h2>
-            <p className="text-base lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
+            <p className="text-3xl lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
               {t("sec_p3")}
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function Main({ open }) {
           </div>
           <div className="lg:w-2/5 mt-10 lg:mt-0">
             <h2 className="text-2xl lg:text-5xl font-bold">{t("sec_txt4")}</h2>
-            <p className="text-base lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
+            <p className="text-3xl lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
               {t("sec_p4")}
             </p>
           </div>
@@ -68,7 +68,7 @@ export default function Main({ open }) {
         <div className="text-center mt-10 lg:mt-32">
           <h1 className="text-2xl lg:text-5xl font-bold">{t("sec_txt5")}</h1>
           <div className="lg:w-2/5 mx-auto">
-            <p className="text-base lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
+            <p className="text-3xl lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
               {t("sec_p5")}
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function Main({ open }) {
             <Image src={img7} alt="rasm" />
           </div>
           <div className="w-3/5 mx-auto">
-            <p className="text-base lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
+            <p className="text-3xl lg:text-lg text-[#848fac] leading-5 lg:leading-6 mt-3 lg:mt-6">
               {t("sec_p6")}
             </p>
           </div>
@@ -114,9 +114,8 @@ export default function Main({ open }) {
                     <p className="text-lg">{t("acc_p")}</p>
                     <Link
                       href="/acc1"
-                      className="bg-orange-300 rounded-3xl h-12 w-40 px-10 flex items-center justify-between"
-                    >
-                      <button className="font-semibold text-base">
+                      className="bg-orange-300 rounded-3xl h-12 px-10 flex gap-2 items-center justify-between">
+                      <button className="font-semibold text-md">
                         {t("acc_btn")}
                       </button>
                       <ArrowRight />
@@ -135,10 +134,9 @@ export default function Main({ open }) {
                   <div className="w-full flex justify-between">
                     <p className="text-lg">{t("acc_p")}</p>
                     <Link
-                      href="/acc2"
-                      className="bg-orange-300 rounded-3xl h-12 w-40 px-10 flex items-center justify-between"
-                    >
-                      <button className="font-semibold text-base">
+                      href="/acc1"
+                      className="bg-orange-300 rounded-3xl h-12 px-10 flex gap-2 items-center justify-between">
+                      <button className="font-semibold text-md">
                         {t("acc_btn")}
                       </button>
                       <ArrowRight />
@@ -157,10 +155,9 @@ export default function Main({ open }) {
                   <div className="w-full flex justify-between">
                     <p className="text-lg">{t("acc_p")}</p>
                     <Link
-                      href="/acc3"
-                      className="bg-orange-300 rounded-3xl h-12 w-40 px-10 flex items-center justify-between"
-                    >
-                      <button className="font-semibold text-base">
+                      href="/acc1"
+                      className="bg-orange-300 rounded-3xl h-12 px-10 flex gap-2 items-center justify-between">
+                      <button className="font-semibold text-md">
                         {t("acc_btn")}
                       </button>
                       <ArrowRight />
@@ -179,10 +176,9 @@ export default function Main({ open }) {
                   <div className="w-full flex justify-between">
                     <p className="text-lg">{t("acc_p")}</p>
                     <Link
-                      href="/acc4"
-                      className="bg-orange-300 rounded-3xl h-12 w-40 px-10 flex items-center justify-between"
-                    >
-                      <button className="font-semibold text-base">
+                      href="/acc1"
+                      className="bg-orange-300 rounded-3xl h-12 px-10 flex gap-2 items-center justify-between">
+                      <button className="font-semibold text-md">
                         {t("acc_btn")}
                       </button>
                       <ArrowRight />

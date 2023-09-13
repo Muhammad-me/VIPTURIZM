@@ -6,12 +6,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const languageMap = {
-  "uz-UZ": { label: "UZ", dir: "ltr", active: true },
-  "ru-RU": { label: "RU", dir: "ltr", active: false },
-  "en-EN": { label: "EN", dir: "ltr", active: false },
+  "uz-UZ": { label: "O'zbek", dir: "ltr", active: true },
+  "ru-RU": { label: "Русский", dir: "ltr", active: false },
+  "en-EN": { label: "English", dir: "ltr", active: false },
 };
 
-export default function Navbar({ open }: { open: any }) {
+export default function Navbar({ open }) {
   const { t } = useTranslation("translation");
 
   return (
@@ -62,8 +62,7 @@ export default function Navbar({ open }: { open: any }) {
                 <button
                   onClick={open}
                   className="text-2xl lg:text-lg font-semibold 
-            py-2 lg:py-3 px-3 lg:px-5 border-none rounded-md bg-[#0e1734] text-white"
-                >
+            py-2 lg:py-3 px-3 lg:px-5 border-none rounded-md bg-[#0e1734] text-white">
                   {t("nav_btn")}
                 </button>
               </Menu.Item>
@@ -74,8 +73,7 @@ export default function Navbar({ open }: { open: any }) {
           <button
             onClick={open}
             className="text-base lg:text-lg font-semibold 
-            py-2 lg:py-3 px-3 lg:px-5 border-none rounded-md bg-[#0e1734] text-white hidden lg:flex"
-          >
+            py-2 lg:py-3 px-3 lg:px-5 border-none rounded-md bg-[#0e1734] text-white hidden lg:flex">
             {t("nav_btn")}
           </button>
           <div className="bg-white text-xl p-3">
@@ -94,8 +92,7 @@ export default function Navbar({ open }: { open: any }) {
                         key={item}
                         onClick={() => {
                           i18next.changeLanguage(item);
-                        }}
-                      >
+                        }}>
                         {languageMap[item].label}
                       </Menu.Item>
                     </>
